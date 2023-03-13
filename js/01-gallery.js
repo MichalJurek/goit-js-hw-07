@@ -12,7 +12,7 @@ galleryItems.forEach((item) => {
       />
     </a>
   </div>`;
-  gallery.insertAdjacentHTML("afterend", galleryItem);
+  gallery.insertAdjacentHTML("beforeend", galleryItem);
 });
 
 console.log(galleryItems);
