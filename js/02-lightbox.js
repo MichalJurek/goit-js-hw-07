@@ -21,5 +21,14 @@ document.querySelector(".gallery").onclick = (event) => {
     instance.show();
 };
 
+const lightbox = new SimpleLightbox(".gallery a", {
+    captions: true,
+    captionSelector: "img",
+    captionType: "attr",
+    captionsData: "alt",
+    captionPosition: "bottom",
+    captionDeley: 250,
+  });
+
 
 console.log(galleryItems);
