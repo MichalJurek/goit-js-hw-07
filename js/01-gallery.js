@@ -1,6 +1,6 @@
-import { galleryItems } from './gallery-items.js';
+import { galleryItems } from "./gallery-items.js";
 // Change code below this line
-const gallery = document.querySelector(".gallery")
+const gallery = document.querySelector(".gallery");
 galleryItems.forEach((item) => {
   const galleryItem = `<div class="gallery__item">
     <a class="gallery__link" href="${item.original}">
@@ -17,8 +17,7 @@ galleryItems.forEach((item) => {
 document.querySelector(".gallery").onclick = (event) => {
   event.preventDefault();
   const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.source}" width="1400" height="900">
-`)
+    <img src="${event.target.dataset.source}" width="1400" height="900">`);
   instance.show();
-}
+};
 console.log(galleryItems);
