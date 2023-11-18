@@ -16,6 +16,12 @@ galleryItems.forEach((item) => {
 
 	gallery.insertAdjacentHTML("beforeend", galleryItem);
 });
+
+const galleryImages = document.querySelectorAll(".gallery__image");
+galleryImages.forEach((galleryImage) => {
+	galleryImage.style.display = "block";
+});
+
 const lightbox = new SimpleLightbox(".gallery a", {
 	captions: true,
 	captionSelector: "img",
